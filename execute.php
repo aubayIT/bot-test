@@ -21,12 +21,13 @@ $text = strtolower($text);
 header("Content-Type: application/json");
 
 $response = '';
-if(strpos($text, "/start") === 0 || $text=="ciao" && $messageID > $messageIDcont)
+if(strpos($text, "/start") === 0 || $text=="ciao" && $messageID > $messageIDciao)
 {
-	$messageIDcont = isset($message['message_id']) ? $message['message_id'] : "";
+	$messageIDciao = isset($message['message_id']) ? $message['message_id'] : "";
 	$response = "Ciao $firstname, benvenuto!
 	Per favore scrivi il numero del ticket per il quale desideri ricevere assistenza.
-	Il message ID è $messageIDcont";
+	Il message ID è $messageID
+	Il message ID del messagio Ciao è $messageIDciao";
 }
 elseif($text=="domanda 1")
 {
