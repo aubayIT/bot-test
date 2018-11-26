@@ -23,7 +23,10 @@ header("Content-Type: application/json");
 $response = '';
 if(strpos($text, "/start") === 0 || $text=="ciao")
 {
-	$response = "Ciao $firstname, benvenuto! Prova a riavviare il pc e vedrai che il tuo problema si risolverà";
+	$messageIDcont = isset($message['message_id']) ? $message['message_id'] : "";
+	$response = "Ciao $firstname, benvenuto!
+	Per favore scrivi il numero del ticket per il quale desideri ricevere assistenza.
+	Il message ID è $messageIDcont";
 }
 elseif($text=="domanda 1")
 {
