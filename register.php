@@ -1,7 +1,7 @@
 <?php
 
 // PARAMETRI DA MODIFICARE
-$WEBHOOK_URL = 'https://aubayittest.herokuapp.com/execute.php';
+$WEBHOOK_URL = 'https://supportit.herokuapp.com/execute.php';
 $BOT_TOKEN = '794548299:AAGVgvAFIh3hZQuzHGNb5KqbxlJvps7B5Po';
 
 // NON APPORTARE MODIFICHE NEL CODICE SEGUENTE
