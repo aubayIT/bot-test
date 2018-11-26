@@ -35,6 +35,6 @@ elseif($text=="domanda 2")
 }
 
 
-$parameters = array('chat_id' => $chatId, "text" => $text);
+$parameters = array('chat_id' => $chatId, "text" => $response);
 $parameters["method"] = "sendMessage";
 echo json_encode($parameters);
