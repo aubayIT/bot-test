@@ -33,7 +33,7 @@ elseif($text=="domanda 1")
 {
 	$response = "risposta 1
 	Il message ID è $messageID
-	Il message ID del messagio Ciao è $messageIDciao"";
+	Il message ID del messagio Ciao è $messageIDciao";
 }
 elseif($text=="domanda 2")
 {
