@@ -21,7 +21,7 @@ $text = strtolower($text);
 header("Content-Type: application/json");
 
 $response = '';
-if(strpos($text, "/start") === 0 || $text=="ciao" && $messageID > $messageIDciao)
+if(strpos($text, "/start") === 0 || $text=="ciao" /*&& $messageID > $messageIDciao*/)
 {
 	$messageIDciao = isset($message['message_id']) ? $message['message_id'] : "";
 	$response = "Ciao $firstname, benvenuto!
